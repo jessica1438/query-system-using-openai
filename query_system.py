@@ -53,7 +53,7 @@ print(chunks[2])
 
 text_chunks = [string.strip().strip('\n') for string in chunks if len(string.split()) >= 10 ]
 
-openai.api_key = "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"
+openai.api_key = "your api key "
 
 embeddigns = []
 for chunk in text_chunks:
@@ -66,8 +66,8 @@ len(embeddigns)
 
 import pinecone
 pinecone.init(
-    api_key="cd2a5fe1-d36c-4090-82aa-5f7de92a314b",
-    environment="us-west1-gcp-free"
+    api_key="your key",
+    environment="your env"
 )
 
 index_name = "model"
