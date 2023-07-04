@@ -98,15 +98,10 @@ def construct_prompt(query):
   chosen_text = []
   for match in matches:
     chosen_text.append(str(match['metadata']['text']))
-
-  prompt = """Answer the question as truthfully as possible using the context below, and if the answer is no within the context, say 'I don't know.'"""
-  prompt += "\n\n"
   prompt += "Context: " + "\n".join(chosen_text)
-  prompt += "\n\n"
   prompt += "Question: " + query
-  prompt += "\n"
   prompt += "Answer: "
-  return prompt
+    return prompt
 
 
 def answer_question(query):
