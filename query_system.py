@@ -120,5 +120,5 @@ def answer_question(query):
 
   return res.choices[0].text
 
-print(answer_question("what is usa"))
+print(answer_question("where is usa"))
 
